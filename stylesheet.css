@@ -70,6 +70,7 @@ body {
     text-transform: uppercase;
 }
 
+
 .slogan p {
     color: rgba(229, 229, 229, 0.7);
     font-weight: 300;
@@ -167,6 +168,14 @@ body {
     }
     .slogan h1 {
         font-size: 32px;
+    }
+    .slogan h2 {
+        text-align: justify;
+    }
+    .slogan h2:after {
+        content: "";
+        display: inline-block;
+        width: 100%;
     }
     #mc-embedded-subscribe{
         width: 60%;

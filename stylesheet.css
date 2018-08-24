@@ -1,0 +1,160 @@
+body {
+    min-height: 100% ;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    background: #D83830;
+}
+
+.background {
+    background: linear-gradient(233.2deg, #157188 32.68%, #4AB1BA 100.66%);
+    width: 100%;
+    min-height: 100%;
+    z-index: -2;
+}
+
+.container{
+    position: relative;
+    margin: 0 auto;
+    width: 400px;
+    min-height: 100%;       
+    padding: 40px 0;       
+    overflow: visible;  
+    z-index: 0;   
+}
+
+.container::after {
+    background-image: url(logo-GP-grande.svg);
+    background-size: 800px;
+    width: 800px;
+    height: 800px;
+    background-repeat: no-repeat;
+    content: "";
+    opacity: 0.05;
+    top: 0;
+    left: -350px;
+    position: absolute;
+    z-index: -1; 
+}
+
+.header-logo {
+    margin: 0 70px;
+    width: 240px;
+}
+
+.slogan {
+    position: relative;  
+    margin: 40px 0 40px;
+}
+
+.slogan h1 {
+    text-transform: uppercase;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 300;
+    font-size: 40px;
+    text-align: center;
+    color: rgba(229, 229, 229, 0.7);
+    margin: 0 0 10px;
+}
+
+.slogan h2 {
+    color: rgba(229, 229, 229, 0.7);   
+    font-weight: 300;
+    font-size: 12px;
+    text-align: center;
+    margin: 0 0 30px;
+    text-transform: uppercase;
+}
+
+.slogan p {
+    color: rgba(229, 229, 229, 0.7);
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 1.5em;
+    margin: 20px 0;
+}
+.slogan p a {
+    color: inherit;
+}
+.slogan p a:hover {
+    color: white;
+}
+
+.instructions {
+    z-index: 10;
+}
+
+.mc-field-group .email{
+    width: 100%;
+    padding: 12px 15px;
+    margin-bottom: 20px;
+
+    border: 2px solid rgba(24, 93, 113, 0.4);
+    border-radius: 4px;
+    background: none;
+    color: #e5e5e5;
+    font-size: 16px;
+    font-weight: 300;
+
+    font-style: italic;
+}
+.mc-field-group .email:focus{
+    outline: none;
+    border-color: white;
+}
+.mc-field-group .email::placeholder{
+    color: rgba(229, 229, 229, 0.5);
+}
+
+
+#mc-embedded-subscribe {
+    background: rgba(24, 93, 113, 0.8);
+    color: rgba(255, 255, 255, 0.6);
+    position: relative;
+    width: 160px;
+    margin: 0 110px;
+    padding: 12px 0;
+    text-align: center;
+    font-size: 18px;
+    border: none;
+    border-radius: 3px;
+    box-shadow: 0 0 0 -2px black, 0 0 0 -1px;
+    cursor: pointer;
+}
+
+#mc-embedded-subscribe:hover, 
+#mc-embedded-subscribe:focus{
+    /* background: rgba(24, 93, 113, 0.4); */
+    color: rgba(255, 255, 255, 1);
+
+}
+
+#mc-embedded-subscribe:focus{
+    outline: none;
+}
+#mc-embedded-subscribe:active{
+    top: 2px;
+}
+
+@media (max-width:481px) {
+    body {
+        overflow-x: hidden;
+    }
+    .background{
+        min-width: 100%;
+    }
+    .container{
+        min-width: 90%;                
+        width: 90%;
+        margin: 0 5%
+    }
+    .logocircular {
+        margin: 0 20%;
+        width: 60%;
+    }
+    #mc-embedded-subscribe{
+        width: 60%;
+        margin: 0 20%;
+    }
+    
+}

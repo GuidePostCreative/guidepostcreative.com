@@ -28,7 +28,7 @@ body {
 }
 
 .container::after {
-    background-image: url(logo-GP-grande.svg);
+    background-image: url(images/logo-GP-grande.svg);
     background-size: 800px;
     width: 800px;
     height: 800px;

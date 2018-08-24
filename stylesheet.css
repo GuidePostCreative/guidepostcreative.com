@@ -11,6 +11,7 @@ body {
     width: 100%;
     min-height: 100%;
     z-index: -2;
+    overflow: hidden;
 }
 
 .container{
@@ -88,6 +89,9 @@ body {
 }
 
 .mc-field-group .email{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
     width: 100%;
     padding: 12px 15px;
     margin-bottom: 20px;
@@ -111,6 +115,9 @@ body {
 
 
 #mc-embedded-subscribe {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
     background: rgba(24, 93, 113, 0.8);
     color: rgba(255, 255, 255, 0.6);
     position: relative;
